@@ -1,0 +1,23 @@
+===============================================
+SAMPLE WINDOWS EVENT ID 4625 RECORDS
+===============================================
+
+EVENT RECORD #1
+Event ID: 4625
+Timestamp: 2024-09-22 14:23:45
+Source: DC1
+Message: Account Name: admin | Source Network Address: 192.168.1.50 | Reason: Incorrect Password | Logon Type: 3
+
+EVENT RECORD #2
+Event ID: 4625
+Timestamp: 2024-09-22 14:24:12
+Source: DC1
+Message: Account Name: admin | Source Network Address: 192.168.1.50 | Reason: Incorrect Password | Logon Type: 3
+
+Analysis:
+- Account "admin" received failed logon attempts
+- Attack source: 192.168.1.50 (attacker IP)
+- Reason: Wrong password (brute force indicator)
+- Pattern: Rapid-fire attempts = BRUTE FORCE ATTACK
+
+This is exactly what our parser detects!
